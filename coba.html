@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <a href="#" onclick="apDatad()"><i data-feather="upload"></i> Unggah</a>
+    <script>
+      function apDatad() {
+        let juduld = "Modul Ajar";
+        let dokumend = "6";
+
+        document.getElementById("juduldokumen").value = juduld;
+        document.getElementById("dokumenkurikulum_id").value = dokumend;
+      }
+    </script>
+
+    <label for="first-name-column">Jenis Dokumen</label>
+    <input
+      type="text"
+      id="first-name-column"
+      class="form-control"
+      id="juduldokumen"
+      name="juduldokumen"
+      value=""
+      readonly
+    />
+    <input
+      type="hidden"
+      class="form-control"
+      name="tahunpelajaran_id"
+      value="1"
+    />
+    <input
+      type="hidden"
+      class="form-control"
+      id="dokumenkurikulum_id"
+      name="dokumenkurikulum_id"
+      value=""
+    />
+    <input
+      type="hidden"
+      class="form-control"
+      name="pembelajaran_id"
+      value="3"
+    />
+  </body>
+</html>
